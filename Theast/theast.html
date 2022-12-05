@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Theast Streaming</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    
+    <!-- link-css -->
+    <link rel="stylesheet" href="./assets/css/theast.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="assets/js/api.js" defer></script>
+
+    <!-- APP SCRIPT -->
+    <script src="./assets/js/app.js" defer></script>
+
+    <script src="assets/js/apiList.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <i class='bx bx-menu-alt-left' id="button-slide-menu"></i>
+    </header>
+
+    <nav class="navbar-slide-menu">
+        <button id="button-close-slide-menu">
+            <i class="bx bx-x"></i>
+        </button>
+        <div class="menu-container">
+            <img src="./assets/images/Theast_logo.png" alt="Logo" class="logo">
+            <div class="profile">
+                <img src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="user-img">
+                <h3 id="username">Theast Profile</h3>
+                <p>Plano premium</p>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="search" name="search" placeholder="Pesquisar">
+                <button id="button-search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+            <ul class="menu-assets">
+                <li>
+                    <a href="#populares">
+                        <span>Populares</span>
+                        <i class="fa fa-fire" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#favoritos">
+                        <span>Favoritos</span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="recentes">
+                        <span>Recentes</span>
+                        <i class="fa fa-clock" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="ajuda">
+                <li>Configurações</li>
+                <li>Sair</li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar-mobile">
+        <button id="button-search">
+            <i class="fa fa-search"></i>
+        </button>
+        <ul class="buttons-assets">
+            <button>
+                <i class="fa fa-fire" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="fa fa-clock" aria-hidden="true"></i>
+            </button>
+        </ul>
+        <button id="button-sair">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+        </button>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+        <!-- HERO SLIDE -->
+        <div class="hero-container">
+        </div>
+        <!-- END HERO SLIDE -->
+    </div>
+
+    <main class="main">
+        <h2 class="title">Filmes</h2>
+        <section id="filmes">
+
+        </section>
+
+        <h2 class="title">Séries</h2>
+        <section id="series">
+
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="box">
+                <img src="assets/images/Theast_logo.png" class="footer-logo" alt="logo">
+                <p>Somos uma empresa que lhe oferece os melhores entreterimentos da atualidade. Só aqui você pode
+                    encontrar os <span>melhores filmes, séries, documentários e canais ao-vivo.</span></p>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Theast</h3>
+                <ul class="footer-menu">
+                    <li>Sobre nós</li>
+                    <li>Assinatura</li>
+                    <li>Planos</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Ajuda</h3>
+                <ul class="footer-menu">
+                    <li>Suporte</li>
+                    <li>Perguntas</li>
+                    <li>Meu perfil</li>
+                    <li>Configurações</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Time</h3>
+                <ul class="footer-menu">
+                    <li>Gustavo Paddila</li>
+                    <li>Heitor Felipe</li>
+                    <li>João Pereira</li>
+                    <li>João Guilherme</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Baixe nosso WebApp</h3>
+                <img src="assets/images/app.png" class="app-img" alt="app">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
